@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | F&amp;F Business</title>
+    <meta name="description" content="Answers to frequently asked questions about working with F&amp;F Business, our advice process, consultations and the services we cover.">
+    <link rel="shortcut icon" href="images/logo/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.min.css">
+    <link rel="stylesheet" href="css/odometer.css">
+    <link rel="stylesheet" href="css/custom-animation.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { DEFAULT: '#E00A0A', dark: '#B80808', light: '#FDEAEA' },
+                        secondary: { DEFAULT: '#FA350A', dark: '#C9290A' },
+                        ink: '#15171B',
+                        body: '#757575',
+                        surface: '#F8F8F8',
+                    },
+                    fontFamily: {
+                        body: ['Montserrat', 'sans-serif'],
+                        heading: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        soft: '0 20px 60px -20px rgba(21,23,27,0.15)',
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="font-body text-body antialiased bg-white overflow-x-hidden">
+
+    <div class="cursor"></div>
+    <div class="cursor-trail"></div>
+
+    <!-- Top info bar -->
+    <div class="hidden md:block bg-ink text-white/70 text-xs">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between py-2.5">
+                <div class="flex items-center gap-6">
+                    <a href="mailto:info@fandfbusniess.co.uk" class="flex items-center gap-2 hover:text-white transition-colors">
+                        <span class="material-symbols-outlined !text-[16px] leading-none">mail</span>
+                        info@fandfbusniess.co.uk
+                    </a>
+                    <a href="https://maps.google.com/?q=20+Hesselyn+Drive,+Rainham,+Essex,+RM13+7EJ" target="_blank" rel="noopener" class="hidden lg:flex items-center gap-2 hover:text-white transition-colors">
+                        <span class="material-symbols-outlined !text-[16px] leading-none">location_on</span>
+                        20 Hesselyn Drive, Rainham, Essex, RM13 7EJ
+                    </a>
+                </div>
+                <ul class="flex items-center gap-2.5">
+                    <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" class="grid place-items-center w-7 h-7 rounded-full bg-white/10 hover:bg-primary transition-colors"><i class="fab fa-facebook-f text-[11px]"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="grid place-items-center w-7 h-7 rounded-full bg-white/10 hover:bg-primary transition-colors"><i class="fab fa-instagram text-[11px]"></i></a></li>
+                    <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="grid place-items-center w-7 h-7 rounded-full bg-white/10 hover:bg-primary transition-colors"><i class="fab fa-linkedin-in text-[11px]"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <header class="navbar sticky top-0 z-40 bg-white border-b border-black/5">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between py-4">
+                <a href="index.html" class="navbar-brand shrink-0">
+                    <img src="images/logo/logo.png" alt="F&amp;F Business logo" class="h-11 w-auto">
+                </a>
+
+                <ul id="primary-nav" class="navbar-nav fixed lg:static inset-y-0 right-0 lg:inset-auto z-50 lg:z-auto w-[85%] sm:w-96 lg:w-auto max-w-sm lg:max-w-none bg-white lg:bg-transparent translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out flex flex-col lg:flex-row lg:items-center gap-1 lg:gap-7 p-6 pt-24 lg:p-0 overflow-y-auto lg:overflow-visible shadow-2xl lg:shadow-none text-sm font-semibold text-ink">
+                    <li>
+                        <a href="index.html" class="nav-link block lg:inline-block py-3 lg:py-2 hover:text-primary transition-colors">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="nav-link block lg:inline-block py-3 lg:py-2 hover:text-primary transition-colors">About Us</a>
+                    </li>
+                    <li class="lg:relative" data-dropdown>
+                        <button type="button" data-dropdown-toggle aria-expanded="false" class="nav-link w-full lg:w-auto flex items-center justify-between lg:justify-start gap-1.5 py-3 lg:py-2 hover:text-primary transition-colors">
+                            Services
+                            <svg data-dropdown-chevron class="w-3 h-3 shrink-0 transition-transform duration-200" viewBox="0 0 12 8" fill="none"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </button>
+                        <ul data-dropdown-menu class="dropdown-menu hidden lg:absolute lg:top-full lg:left-0 lg:mt-3 lg:w-64 rounded-xl lg:shadow-xl lg:border lg:border-black/5 bg-surface lg:bg-white mt-1 lg:mt-3 p-2 lg:p-2 space-y-0.5 font-medium">
+                            <li><a class="dropdown-item block rounded-lg px-4 py-2.5 hover:bg-primary-light hover:text-primary transition-colors" href="protection.html">Protection</a></li>
+                            <li><a class="dropdown-item block rounded-lg px-4 py-2.5 hover:bg-primary-light hover:text-primary transition-colors" href="mortgages.html">Mortgages</a></li>
+                            <li><a class="dropdown-item block rounded-lg px-4 py-2.5 hover:bg-primary-light hover:text-primary transition-colors" href="estate-planning.html">Estate Planning</a></li>
+                            <li><a class="dropdown-item block rounded-lg px-4 py-2.5 hover:bg-primary-light hover:text-primary transition-colors" href="general-insurance.html">General Insurance</a></li>
+                            <li><a class="dropdown-item block rounded-lg px-4 py-2.5 hover:bg-primary-light hover:text-primary transition-colors" href="business-loan.html">Business Loan</a></li>
+                            <li><a class="dropdown-item block rounded-lg px-4 py-2.5 hover:bg-primary-light hover:text-primary transition-colors" href="conveyancing.html">Conveyancing</a></li>
+                            <li><a class="dropdown-item block rounded-lg px-4 py-2.5 hover:bg-primary-light hover:text-primary transition-colors" href="survey.html">Survey</a></li>
+                        </ul>
+                    </li>
+                    <li class="lg:relative" data-dropdown>
+                        <button type="button" data-dropdown-toggle aria-expanded="false" class="nav-link w-full lg:w-auto flex items-center justify-between lg:justify-start gap-1.5 py-3 lg:py-2 hover:text-primary transition-colors">
+                            Calculators
+                            <svg data-dropdown-chevron class="w-3 h-3 shrink-0 transition-transform duration-200" viewBox="0 0 12 8" fill="none"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </button>
+                        <ul data-dropdown-menu class="dropdown-menu hidden lg:absolute lg:top-full lg:left-0 lg:mt-3 lg:w-72 rounded-xl lg:shadow-xl lg:border lg:border-black/5 bg-surface lg:bg-white mt-1 lg:mt-3 p-2 space-y-0.5 font-medium">
+                            <li><a class="dropdown-item block rounded-lg px-4 py-2.5 hover:bg-primary-light hover:text-primary transition-colors" href="mortgage-calculator.html">Mortgage Calculator</a></li>
+                            <li><a class="dropdown-item block rounded-lg px-4 py-2.5 hover:bg-primary-light hover:text-primary transition-colors" href="stamp-duty.html">Stamp Duty</a></li>
+                            <li><a class="dropdown-item block rounded-lg px-4 py-2.5 hover:bg-primary-light hover:text-primary transition-colors" href="borrowing-calculator.html">Borrowing Calculator</a></li>
+                            <li><a class="dropdown-item block rounded-lg px-4 py-2.5 hover:bg-primary-light hover:text-primary transition-colors" href="commercial-loan.html">Commercial Loan</a></li>
+                            <li><a class="dropdown-item block rounded-lg px-4 py-2.5 hover:bg-primary-light hover:text-primary transition-colors" href="rent-vs-buy.html">Rent vs Buy</a></li>
+                            <li><a class="dropdown-item block rounded-lg px-4 py-2.5 hover:bg-primary-light hover:text-primary transition-colors" href="loan-to-value.html">Loan to Value</a></li>
+                            <li><a class="dropdown-item block rounded-lg px-4 py-2.5 hover:bg-primary-light hover:text-primary transition-colors" href="income-multiples.html">Income Multiples</a></li>
+                            <li><a class="dropdown-item block rounded-lg px-4 py-2.5 hover:bg-primary-light hover:text-primary transition-colors" href="over-payment.html">Over Payment</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="faq.html" class="nav-link active block lg:inline-block py-3 lg:py-2 hover:text-primary transition-colors">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="partner-with-us.html" class="nav-link block lg:inline-block py-3 lg:py-2 hover:text-primary transition-colors">Partner With Us</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="nav-link block lg:inline-block py-3 lg:py-2 hover:text-primary transition-colors">Contact Us</a>
+                    </li>
+                    <li class="lg:hidden pt-4 mt-2 border-t border-black/10">
+                        <a href="contact.html" class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-bold uppercase tracking-wide text-white">Get Started</a>
+                    </li>
+                </ul>
+
+                <div class="flex items-center gap-3">
+                    <a href="contact.html" class="hidden lg:inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-xs font-bold uppercase tracking-wide text-white shadow-lg shadow-primary/25 transition hover:bg-secondary hover:shadow-secondary/25">
+                        Get Started
+                    </a>
+                    <button type="button" id="mobile-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav" class="lg:hidden grid place-items-center w-11 h-11 rounded-full bg-ink text-white">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none"><path d="M3 6.5H21M3 12H21M3 17.5H21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="mobile-menu-overlay" class="lg:hidden fixed inset-0 z-40 bg-ink/50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+
+    <main>
+        <!-- Breadcrumb -->
+        <section class="relative bg-ink py-20 sm:py-28">
+            <div class="absolute inset-0">
+                <img src="images/breadcrumb/1.jpg" alt="" class="w-full h-full object-cover opacity-25">
+                <div class="absolute inset-0 bg-ink/80"></div>
+            </div>
+            <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="title-animation font-heading font-extrabold text-white text-4xl sm:text-5xl mb-4">Frequently Asked Questions</h1>
+                <nav class="flex items-center justify-center gap-2 text-sm text-white/70">
+                    <a href="index.html" class="hover:text-primary transition-colors">Home</a>
+                    <i class="fa-solid fa-angle-right text-xs"></i>
+                    <span class="text-primary">Frequently Asked Questions</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="py-16 sm:py-24">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mx-auto text-center mb-14">
+                    <h6 class="right-reveal text-primary font-heading font-bold text-sm tracking-wide uppercase mb-3">FAQs Questions</h6>
+                    <h2 class="title-animation font-heading font-extrabold text-ink text-3xl sm:text-4xl leading-tight mb-5">
+                        Great Solutions For <span class="text-primary">Your Business</span>
+                    </h2>
+                    <p class="right-reveal text-body leading-relaxed">
+                        Answers to the questions we hear most often. Can't find what you're looking for? Get in touch and we'll be happy to help.
+                    </p>
+                </div>
+                <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-x-6 gap-y-4 items-start" data-accordion-group>
+                    <div class="top-reveal rounded-2xl border border-black/5 overflow-hidden" data-accordion-item>
+                        <button type="button" data-accordion-trigger aria-expanded="false" class="flex w-full items-center justify-between gap-4 px-6 py-5 text-left font-heading font-bold text-ink hover:text-primary transition-colors">
+                            What Is Required Of A Consultant?
+                            <i class="fa-solid fa-plus text-primary text-sm shrink-0 transition-transform"></i>
+                        </button>
+                        <div data-accordion-panel class="hidden px-6 pb-5 text-sm leading-relaxed">
+                            <p>A good consultant brings clear, independent advice, up-to-date market knowledge and a genuine focus on the client's goals — not just product recommendations.</p>
+                        </div>
+                    </div>
+                    <div class="top-reveal rounded-2xl border border-black/5 overflow-hidden" data-accordion-item>
+                        <button type="button" data-accordion-trigger aria-expanded="false" class="flex w-full items-center justify-between gap-4 px-6 py-5 text-left font-heading font-bold text-ink hover:text-primary transition-colors">
+                            Open A Business Bank Account?
+                            <i class="fa-solid fa-plus text-primary text-sm shrink-0 transition-transform"></i>
+                        </button>
+                        <div data-accordion-panel class="hidden px-6 pb-5 text-sm leading-relaxed">
+                            <p>Most UK banks ask for proof of ID, proof of address and basic company details. Our team can point you to business-banking partners suited to your situation.</p>
+                        </div>
+                    </div>
+                    <div class="top-reveal rounded-2xl border border-black/5 overflow-hidden" data-accordion-item>
+                        <button type="button" data-accordion-trigger aria-expanded="false" class="flex w-full items-center justify-between gap-4 px-6 py-5 text-left font-heading font-bold text-ink hover:text-primary transition-colors">
+                            Is A Consulting Business Profitable?
+                            <i class="fa-solid fa-plus text-primary text-sm shrink-0 transition-transform"></i>
+                        </button>
+                        <div data-accordion-panel class="hidden px-6 pb-5 text-sm leading-relaxed">
+                            <p>Profitability depends on the niche, client relationships and consistency of referrals — a focused, customer-first approach tends to compound over time.</p>
+                        </div>
+                    </div>
+                    <div class="top-reveal rounded-2xl border border-black/5 overflow-hidden" data-accordion-item>
+                        <button type="button" data-accordion-trigger aria-expanded="false" class="flex w-full items-center justify-between gap-4 px-6 py-5 text-left font-heading font-bold text-ink hover:text-primary transition-colors">
+                            How Do I Book A Consultation?
+                            <i class="fa-solid fa-plus text-primary text-sm shrink-0 transition-transform"></i>
+                        </button>
+                        <div data-accordion-panel class="hidden px-6 pb-5 text-sm leading-relaxed">
+                            <p>Head to our <a href="contact.html" class="text-primary font-semibold underline">Contact page</a> or call us directly — we'll arrange a time that works, in person or online.</p>
+                        </div>
+                    </div>
+                    <div class="top-reveal rounded-2xl border border-black/5 overflow-hidden" data-accordion-item>
+                        <button type="button" data-accordion-trigger aria-expanded="false" class="flex w-full items-center justify-between gap-4 px-6 py-5 text-left font-heading font-bold text-ink hover:text-primary transition-colors">
+                            How Much Does A Consultation Cost?
+                            <i class="fa-solid fa-plus text-primary text-sm shrink-0 transition-transform"></i>
+                        </button>
+                        <div data-accordion-panel class="hidden px-6 pb-5 text-sm leading-relaxed">
+                            <p>Our initial consultation is about understanding your situation and goals. Get in touch and we'll talk you through how we work and what to expect before anything is agreed.</p>
+                        </div>
+                    </div>
+                    <div class="top-reveal rounded-2xl border border-black/5 overflow-hidden" data-accordion-item>
+                        <button type="button" data-accordion-trigger aria-expanded="false" class="flex w-full items-center justify-between gap-4 px-6 py-5 text-left font-heading font-bold text-ink hover:text-primary transition-colors">
+                            Do You Charge A Broker Fee?
+                            <i class="fa-solid fa-plus text-primary text-sm shrink-0 transition-transform"></i>
+                        </button>
+                        <div data-accordion-panel class="hidden px-6 pb-5 text-sm leading-relaxed">
+                            <p>Our fee structure depends on the service and your circumstances, and is always explained clearly up front before you commit to anything.</p>
+                        </div>
+                    </div>
+                    <div class="top-reveal rounded-2xl border border-black/5 overflow-hidden" data-accordion-item>
+                        <button type="button" data-accordion-trigger aria-expanded="false" class="flex w-full items-center justify-between gap-4 px-6 py-5 text-left font-heading font-bold text-ink hover:text-primary transition-colors">
+                            Which Lenders Do You Work With?
+                            <i class="fa-solid fa-plus text-primary text-sm shrink-0 transition-transform"></i>
+                        </button>
+                        <div data-accordion-panel class="hidden px-6 pb-5 text-sm leading-relaxed">
+                            <p>We work with a wide panel of lenders and providers so we can compare options across the market and match you with the right fit, rather than a single provider's products.</p>
+                        </div>
+                    </div>
+                    <div class="top-reveal rounded-2xl border border-black/5 overflow-hidden" data-accordion-item>
+                        <button type="button" data-accordion-trigger aria-expanded="false" class="flex w-full items-center justify-between gap-4 px-6 py-5 text-left font-heading font-bold text-ink hover:text-primary transition-colors">
+                            How Long Does A Mortgage Application Take?
+                            <i class="fa-solid fa-plus text-primary text-sm shrink-0 transition-transform"></i>
+                        </button>
+                        <div data-accordion-panel class="hidden px-6 pb-5 text-sm leading-relaxed">
+                            <p>Timescales vary by lender and case complexity. Our team keeps you updated at every stage and works to keep things moving as smoothly as possible.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-3xl mx-auto mt-14 rounded-3xl bg-surface border border-black/5 px-8 py-10 text-center">
+                    <h3 class="font-heading font-bold text-ink text-xl mb-2">Still Have Questions?</h3>
+                    <p class="text-sm text-body mb-6">Our team is happy to talk through anything that's still on your mind.</p>
+                    <a href="contact.html" class="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-bold uppercase tracking-wide text-white shadow-lg shadow-primary/30 transition hover:bg-secondary hover:shadow-secondary/30">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-ink text-white/70">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 -translate-y-10">
+            <div class="rounded-3xl bg-primary px-6 sm:px-12 py-10 shadow-2xl shadow-primary/30">
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
+                    <h2 class="font-heading font-extrabold text-white text-2xl sm:text-3xl text-center lg:text-left">Subscribe for Any Update Information</h2>
+                    <form action="#" data-demo-form class="w-full lg:w-auto flex flex-col sm:flex-row items-stretch gap-3">
+                        <input type="email" name="email" required placeholder="Enter your email address" class="w-full sm:w-72 rounded-full px-6 py-3.5 text-sm text-ink placeholder:text-body focus:outline-none focus:ring-2 focus:ring-white">
+                        <button type="submit" class="rounded-full bg-ink px-7 py-3.5 text-sm font-bold uppercase tracking-wide text-white hover:bg-black transition-colors">Submit</button>
+                    </form>
+                </div>
+                <p data-form-note class="hidden mt-4 text-sm text-white/90 text-center lg:text-left">Thanks — you're subscribed!</p>
+            </div>
+        </div>
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-16 -mt-4">
+            <div class="grid lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-4">
+                    <a href="index.html"><img src="images/logo/logo.png" alt="F&amp;F Business logo" class="h-11 w-auto mb-5"></a>
+                    <p class="text-sm leading-relaxed mb-6">We pride ourselves on a customer-first approach. Your goals are our priority, and we work wholeheartedly to provide advice and solutions that support your financial future.</p>
+                    <ul class="flex items-center gap-3">
+                        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" class="grid place-items-center w-9 h-9 rounded-full bg-white/10 hover:bg-primary transition-colors"><i class="fab fa-facebook-f text-xs"></i></a></li>
+                        <li><a href="https://www.x.com/?lang=en" target="_blank" rel="noopener" aria-label="X (Twitter)" class="grid place-items-center w-9 h-9 rounded-full bg-white/10 hover:bg-primary transition-colors"><i class="fa-brands fa-x-twitter text-xs"></i></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="grid place-items-center w-9 h-9 rounded-full bg-white/10 hover:bg-primary transition-colors"><i class="fab fa-instagram text-xs"></i></a></li>
+                        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="grid place-items-center w-9 h-9 rounded-full bg-white/10 hover:bg-primary transition-colors"><i class="fab fa-linkedin-in text-xs"></i></a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-3">
+                    <h4 class="font-heading font-bold text-white mb-5">Explore</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="about.html" class="hover:text-primary transition-colors">About Company</a></li>
+                        <li><a href="mortgages.html" class="hover:text-primary transition-colors">Mortgages</a></li>
+                        <li><a href="estate-planning.html" class="hover:text-primary transition-colors">Estate Planning</a></li>
+                        <li><a href="loan-to-value.html" class="hover:text-primary transition-colors">Loan to Value</a></li>
+                        <li><a href="contact.html" class="hover:text-primary transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-5 grid sm:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-heading font-bold text-white mb-5">Official Info</h4>
+                        <ul class="space-y-4 text-sm">
+                            <li class="flex items-start gap-3">
+                                <span class="material-symbols-outlined !text-lg text-primary">location_on</span>
+                                <span>20 Hesselyn Drive, Rainham, Essex, RM13 7EJ</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="material-symbols-outlined !text-lg text-primary">phone_in_talk</span>
+                                <a href="tel:+447552675976" class="hover:text-primary transition-colors">+44 7552 675976</a>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="material-symbols-outlined !text-lg text-primary">mail</span>
+                                <a href="mailto:info@fandfbusniess.co.uk" class="hover:text-primary transition-colors">info@fandfbusniess.co.uk</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 class="font-heading font-bold text-white mb-5">Open Hours</h5>
+                        <p class="text-sm">Mon – Sat: 8am – 5pm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-white/10">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
+                <p class="text-center text-xs text-white/50">© 2026. All Rights Reserved by F and F Business</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/SplitText.min.js"></script>
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/odometer.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

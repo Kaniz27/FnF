@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F&amp;F Business | Finance &amp; Mortgage Consultants</title>
+    <meta name="description" content="F&amp;F Business is a finance and mortgage advisory firm in Rainham, Essex, covering mortgages, protection, estate planning, business loans, surveys and conveyancing.">
+    <link rel="shortcut icon" href="images/logo/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.min.css">
+    <link rel="stylesheet" href="css/odometer.css">
+    <link rel="stylesheet" href="css/custom-animation.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { DEFAULT: '#E00A0A', dark: '#B80808', light: '#FDEAEA' },
+                        secondary: { DEFAULT: '#FA350A', dark: '#C9290A' },
+                        ink: '#15171B',
+                        body: '#757575',
+                        surface: '#F8F8F8',
+                    },
+                    fontFamily: {
+                        body: ['Montserrat', 'sans-serif'],
+                        heading: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        soft: '0 20px 60px -20px rgba(21,23,27,0.15)',
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="font-body text-body antialiased bg-white overflow-x-hidden">
+
+    <div class="cursor"></div>
+    <div class="cursor-trail"></div>
+
+    <!-- Top info bar -->
+    <div class="hidden md:block bg-ink text-white/70 text-xs">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between py-2.5">
+                <div class="flex items-center gap-6">
+                    <a href="mailto:info@fandfbusniess.co.uk" class="flex items-center gap-2 hover:text-white transition-colors">
+                        <span class="material-symbols-outlined !text-[16px] leading-none">mail</span>
+                        info@fandfbusniess.co.uk
+                    </a>
+                    <a href="https://maps.google.com/?q=20+Hesselyn+Drive,+Rainham,+Essex,+RM13+7EJ" target="_blank" rel="noopener" class="hidden lg:flex items-center gap-2 hover:text-white transition-colors">
+                        <span class="material-symbols-outlined !text-[16px] leading-none">location_on</span>
+                        20 Hesselyn Drive, Rainham, Essex, RM13 7EJ
+                    </a>
+                </div>
+                <ul class="flex items-center gap-2.5">
+                    <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" class="grid place-items-center w-7 h-7 rounded-full bg-white/10 hover:bg-primary transition-colors"><i class="fab fa-facebook-f text-[11px]"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="grid place-items-center w-7 h-7 rounded-full bg-white/10 hover:bg-primary transition-colors"><i class="fab fa-instagram text-[11px]"></i></a></li>
+                    <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="grid place-items-center w-7 h-7 rounded-full bg-white/10 hover:bg-primary transition-colors"><i class="fab fa-linkedin-in text-[11px]"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <header class="navbar sticky top-0 z-40 bg-white border-b border-black/5">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between py-4">
+                <a href="index.html" class="navbar-brand shrink-0">
+                    <img src="images/logo/logo.png" alt="F&amp;F Business logo" class="h-11 w-auto">
+                </a>
+
+                <ul id="primary-nav" class="navbar-nav fixed lg:static inset-y-0 right-0 lg:inset-auto z-50 lg:z-auto w-[85%] sm:w-96 lg:w-auto max-w-sm lg:max-w-none bg-white lg:bg-transparent translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out flex flex-col lg:flex-row lg:items-center gap-1 lg:gap-7 p-6 pt-24 lg:p-0 overflow-y-auto lg:overflow-visible shadow-2xl lg:shadow-none text-sm font-semibold text-ink">
+                    <li>
+                        <a href="index.html" class="nav-link active block lg:inline-block py-3 lg:py-2 hover:text-primary transition-colors">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="nav-link block lg:inline-block py-3 lg:py-2 hover:text-primary transition-colors">About Us</a>
+                    </li>
+                    <li class="lg:relative" data-dropdown>
+                        <button type="button" data-dropdown-toggle aria-expanded="false" class="nav-link w-full lg:w-auto flex items-center justify-between lg:justify-start gap-1.5 py-3 lg:py-2 hover:text-primary transition-colors">
+                            Services
+                            <svg data-dropdown-chevron class="w-3 h-3 shrink-0 transition-transform duration-200" viewBox="0 0 12 8" fill="none"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </button>
+                        <ul data-dropdown-menu class="dropdown-menu hidden lg:absolute lg:top-full lg:left-0 lg:mt-3 lg:w-64 rounded-xl lg:shadow-xl lg:border lg:border-black/5 bg-surface lg:bg-white mt-1 lg:mt-3 p-2 lg:p-2 space-y-0.5 font-medium">
+                            <li><a class="dropdown-item block rounded-lg px-4 py-2.5 hover:bg-primary-light hover:text-primary transition-colors" href="protection.html">Protection</a></li>
+                            <li><a class="dropdown-item block rounded-lg px-4 py-2.5 hover:bg-primary-light hover:text-primary transition-colors" href="mortgages.html">Mortgages</a></li>
+                            <li><a class="dropdown-item block rounded-lg px-4 py-2.5 hover:bg-primary-light hover:text-primary transition-colors" href="estate-planning.html">Estate Planning</a></li>
+                            <li><a class="dropdown-item block rounded-lg px-4 py-2.5 hover:bg-primary-light hover:text-primary transition-colors" href="general-insurance.html">General Insurance</a></li>
+                            <li><a class="dropdown-item block rounded-lg px-4 py-2.5 hover:bg-primary-light hover:text-primary transition-colors" href="business-loan.html">Business Loan</a></li>
+                            <li><a class="dropdown-item block rounded-lg px-4 py-2.5 hover:bg-primary-light hover:text-primary transition-colors" href="conveyancing.html">Conveyancing</a></li>
+                            <li><a class="dropdown-item block rounded-lg px-4 py-2.5 hover:bg-primary-light hover:text-primary transition-colors" href="survey.html">Survey</a></li>
+                        </ul>
+                    </li>
+                    <li class="lg:relative" data-dropdown>
+                        <button type="button" data-dropdown-toggle aria-expanded="false" class="nav-link w-full lg:w-auto flex items-center justify-between lg:justify-start gap-1.5 py-3 lg:py-2 hover:text-primary transition-colors">
+                            Calculators
+                            <svg data-dropdown-chevron class="w-3 h-3 shrink-0 transition-transform duration-200" viewBox="0 0 12 8" fill="none"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </button>
+                        <ul data-dropdown-menu class="dropdown-menu hidden lg:absolute lg:top-full lg:left-0 lg:mt-3 lg:w-72 rounded-xl lg:shadow-xl lg:border lg:border-black/5 bg-surface lg:bg-white mt-1 lg:mt-3 p-2 space-y-0.5 font-medium">
+                            <li><a class="dropdown-item block rounded-lg px-4 py-2.5 hover:bg-primary-light hover:text-primary transition-colors" href="mortgage-calculator.html">Mortgage Calculator</a></li>
+                            <li><a class="dropdown-item block rounded-lg px-4 py-2.5 hover:bg-primary-light hover:text-primary transition-colors" href="stamp-duty.html">Stamp Duty</a></li>
+                            <li><a class="dropdown-item block rounded-lg px-4 py-2.5 hover:bg-primary-light hover:text-primary transition-colors" href="borrowing-calculator.html">Borrowing Calculator</a></li>
+                            <li><a class="dropdown-item block rounded-lg px-4 py-2.5 hover:bg-primary-light hover:text-primary transition-colors" href="commercial-loan.html">Commercial Loan</a></li>
+                            <li><a class="dropdown-item block rounded-lg px-4 py-2.5 hover:bg-primary-light hover:text-primary transition-colors" href="rent-vs-buy.html">Rent vs Buy</a></li>
+                            <li><a class="dropdown-item block rounded-lg px-4 py-2.5 hover:bg-primary-light hover:text-primary transition-colors" href="loan-to-value.html">Loan to Value</a></li>
+                            <li><a class="dropdown-item block rounded-lg px-4 py-2.5 hover:bg-primary-light hover:text-primary transition-colors" href="income-multiples.html">Income Multiples</a></li>
+                            <li><a class="dropdown-item block rounded-lg px-4 py-2.5 hover:bg-primary-light hover:text-primary transition-colors" href="over-payment.html">Over Payment</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="faq.html" class="nav-link block lg:inline-block py-3 lg:py-2 hover:text-primary transition-colors">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="partner-with-us.html" class="nav-link block lg:inline-block py-3 lg:py-2 hover:text-primary transition-colors">Partner With Us</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="nav-link block lg:inline-block py-3 lg:py-2 hover:text-primary transition-colors">Contact Us</a>
+                    </li>
+                    <li class="lg:hidden pt-4 mt-2 border-t border-black/10">
+                        <a href="contact.html" class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-bold uppercase tracking-wide text-white">Get Started</a>
+                    </li>
+                </ul>
+
+                <div class="flex items-center gap-3">
+                    <a href="contact.html" class="hidden lg:inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-xs font-bold uppercase tracking-wide text-white shadow-lg shadow-primary/25 transition hover:bg-secondary hover:shadow-secondary/25">
+                        Get Started
+                    </a>
+                    <button type="button" id="mobile-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav" class="lg:hidden grid place-items-center w-11 h-11 rounded-full bg-ink text-white">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none"><path d="M3 6.5H21M3 12H21M3 17.5H21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="mobile-menu-overlay" class="lg:hidden fixed inset-0 z-40 bg-ink/50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+
+    <main>
+        <!-- Hero -->
+        <section class="relative overflow-hidden bg-surface">
+            <div class="pointer-events-none absolute inset-0 opacity-60">
+                <img src="images/shape/banner-two-2.png" alt="" class="absolute -top-10 -right-16 w-72">
+                <img src="images/shape/banner-two-1.png" alt="" class="absolute bottom-0 left-0 w-56">
+            </div>
+            <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-28">
+                <div class="grid lg:grid-cols-2 gap-14 items-center">
+                    <div>
+                        <h6 class="title-animation inline-flex items-center gap-2 text-primary font-heading font-bold text-sm tracking-wide uppercase mb-5">
+                            Finance &amp; Mortgage
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </h6>
+                        <h1 class="title-animation font-heading font-extrabold text-ink text-4xl sm:text-5xl xl:text-6xl leading-[1.1] mb-6">
+                            Partnering for Success <span class="text-primary">with Goals Our Solutions</span>
+                        </h1>
+                        <p class="right-reveal text-body text-base sm:text-lg leading-relaxed max-w-xl mb-9">
+                            F&amp;F Business is a leading consulting agency specializing in unlocking the true potential of finance and Mortgage.
+                        </p>
+                        <div class="flex flex-wrap items-center gap-8">
+                            <div class="right-reveal">
+                                <a href="contact.html" class="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-sm font-bold uppercase tracking-wide text-white shadow-lg shadow-primary/30 transition hover:bg-secondary hover:shadow-secondary/30">
+                                    Get Started
+                                </a>
+                            </div>
+                            <div class="left-reveal">
+                                <div class="flex items-center gap-4">
+                                    <a href="https://www.youtube.com/watch?v=TfU0qjuZkJ4" class="video-play-btn shrink-0 w-[55px] h-[55px] grid place-items-center">
+                                        <i class="fa-solid fa-play"></i>
+                                    </a>
+                                    <span class="text-sm font-semibold text-ink leading-snug">See Our <br> Success Story</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img src="images/banner/two1.png" alt="F&amp;F Business advisor" class="relative z-10 mx-auto w-full max-w-md">
+                        <a href="contact.html" class="absolute -bottom-4 left-2 sm:left-8 z-20 group">
+                            <div class="relative w-28 h-28 sm:w-32 sm:h-32">
+                                <div class="rotate-circle absolute inset-0">
+                                    <svg class="textcircle w-full h-full" viewBox="0 0 500 500">
+                                        <defs>
+                                            <path id="textcircle" d="M250,400 a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z"></path>
+                                        </defs>
+                                        <text fill="#15171B">
+                                            <textPath xlink:href="#textcircle" textLength="900">Mortgage . Finance .</textPath>
+                                        </text>
+                                    </svg>
+                                </div>
+                                <div class="absolute inset-0 grid place-items-center rounded-full bg-primary shadow-lg shadow-primary/30 group-hover:bg-secondary transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 55 54" fill="none">
+                                        <path d="M27.5938 48.8319C27.2291 48.8318 26.8743 48.713 26.5831 48.4933C26.292 48.2736 26.0803 47.965 25.9801 47.6143L24.2365 41.5107C23.487 38.8552 22.069 36.4364 20.1179 34.4853C18.1668 32.5342 15.7479 31.1162 13.0925 30.3666L6.98884 28.6231C6.63835 28.5227 6.33007 28.3109 6.11062 28.0197C5.89116 27.7286 5.77246 27.3739 5.77246 27.0093C5.77246 26.6447 5.89116 26.2901 6.11062 25.9989C6.33007 25.7078 6.63835 25.496 6.98884 25.3956L13.0925 23.652C15.7479 22.9025 18.1668 21.4844 20.1179 19.5334C22.069 17.5823 23.487 15.1634 24.2365 12.5079L25.9801 6.40431C26.0805 6.05382 26.2923 5.74554 26.5834 5.52609C26.8746 5.30663 27.2293 5.18793 27.5938 5.18793C27.9584 5.18793 28.3131 5.30663 28.6043 5.52609C28.8954 5.74554 29.1072 6.05382 29.2076 6.40431L30.9512 12.5079C31.7007 15.1634 33.1187 17.5823 35.0698 19.5334C37.0209 21.4844 39.4398 22.9025 42.0952 23.652L48.1989 25.3956C48.5494 25.496 48.8576 25.7078 49.0771 25.9989C49.2965 26.2901 49.4152 26.6447 49.4152 27.0093C49.4152 27.3739 49.2965 27.7286 49.0771 28.0197C48.8576 28.3109 48.5494 28.5227 48.1989 28.6231L42.0952 30.3666C39.4398 31.1162 37.0209 32.5342 35.0698 34.4853C33.1187 36.4364 31.7007 38.8552 30.9512 41.5107L29.2076 47.6143C29.1074 47.965 28.8957 48.2736 28.6046 48.4933C28.3134 48.713 27.9586 48.8318 27.5938 48.8319ZM13.5602 27.0093L14.0079 27.1391C17.2126 28.0439 20.1318 29.7553 22.4864 32.11C24.8411 34.4647 26.5526 37.3838 27.4573 40.5886L27.5871 41.0362L27.717 40.5886C28.6217 37.3838 30.3332 34.4647 32.6878 32.11C35.0425 29.7553 37.9617 28.0439 41.1664 27.1391L41.614 27.0093L41.1664 26.8795C37.9617 25.9748 35.0425 24.2633 32.6878 21.9086C30.3332 19.554 28.6217 16.6348 27.717 13.4301L27.5938 12.978L27.464 13.4256C26.5593 16.6303 24.8478 19.5495 22.4932 21.9042C20.1385 24.2588 17.2193 25.9703 14.0146 26.875L13.5602 27.0093Z" fill="white"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="py-16 sm:py-24">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-8 items-center mb-14">
+                    <div>
+                        <h6 class="right-reveal text-primary font-heading font-bold text-sm tracking-wide uppercase mb-3">Who we are</h6>
+                        <h2 class="title-animation font-heading font-extrabold text-ink text-3xl sm:text-4xl leading-tight">
+                            Your trusted partner for <span class="text-primary">long-term financial success</span>
+                        </h2>
+                    </div>
+                    <p class="right-reveal text-body leading-relaxed">
+                        F&amp;F Business is a financial advisory firm committed to helping individuals with a range of services, including Mortgage, Protection, Estate Planning, General Insurance, Business Loan, Survey and Conveyancing. We pride ourselves on a customer-first approach. Your goals are our priority, and we work wholeheartedly to provide advice and solutions that support your financial future.
+                    </p>
+                </div>
+                <div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-6">
+                    <div class="top-reveal group rounded-2xl border border-black/5 bg-white p-8 shadow-soft hover:-translate-y-1.5 transition-transform">
+                        <div class="grid place-items-center w-16 h-16 rounded-2xl bg-primary-light text-primary text-3xl mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <i class="flaticon-consultancy"></i>
+                        </div>
+                        <h5 class="font-heading font-bold text-lg text-ink mb-3"><a href="services-details.html" class="hover:text-primary transition-colors">Growth</a></h5>
+                        <p class="text-sm leading-relaxed">Unlock better mortgage opportunities with access to the entire market—fuel your financial growth with the right lending choices.</p>
+                    </div>
+                    <div class="top-reveal group rounded-2xl border border-black/5 bg-white p-8 shadow-soft hover:-translate-y-1.5 transition-transform">
+                        <div class="grid place-items-center w-16 h-16 rounded-2xl bg-primary-light text-primary text-3xl mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <i class="flaticon-innovation"></i>
+                        </div>
+                        <h5 class="font-heading font-bold text-lg text-ink mb-3"><a href="services-details.html" class="hover:text-primary transition-colors">Guidance</a></h5>
+                        <p class="text-sm leading-relaxed">Receive expert, independent advice from experienced mortgage professionals who are committed to helping you make informed decisions.</p>
+                    </div>
+                    <div class="top-reveal group rounded-2xl border border-black/5 bg-white p-8 shadow-soft hover:-translate-y-1.5 transition-transform">
+                        <div class="grid place-items-center w-16 h-16 rounded-2xl bg-primary-light text-primary text-3xl mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <i class="flaticon-research"></i>
+                        </div>
+                        <h5 class="font-heading font-bold text-lg text-ink mb-3"><a href="services-details.html" class="hover:text-primary transition-colors">Guardian</a></h5>
+                        <p class="text-sm leading-relaxed">We look out for your best interests—navigating complex or high-value mortgage scenarios and ensuring you're protected from hidden costs and poor deals.</p>
+                    </div>
+                    <div class="top-reveal group rounded-2xl border border-black/5 bg-white p-8 shadow-soft hover:-translate-y-1.5 transition-transform">
+                        <div class="grid place-items-center w-16 h-16 rounded-2xl bg-primary-light text-primary text-3xl mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <i class="flaticon-solution"></i>
+                        </div>
+                        <h5 class="font-heading font-bold text-lg text-ink mb-3"><a href="services-details.html" class="hover:text-primary transition-colors">Solution</a></h5>
+                        <p class="text-sm leading-relaxed">FandF Business is best in Mortgage and financial, our team gives the best solution for your mortgage and financial loan requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="py-16 sm:py-24 bg-surface">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-14 items-center">
+                    <div class="relative">
+                        <img src="images/about/about-two.png" alt="F&amp;F Business team" class="w-full rounded-3xl">
+                        <div class="left-reveal absolute -left-2 sm:left-4 bottom-6 flex items-center gap-3 rounded-2xl bg-white shadow-soft px-5 py-4">
+                            <i class="flaticon-team text-2xl text-primary"></i>
+                            <span class="font-heading font-bold text-ink text-sm">Experts</span>
+                        </div>
+                        <div class="right-reveal absolute -right-2 sm:right-4 top-6 flex items-center gap-3 rounded-2xl bg-ink shadow-soft px-5 py-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="36" viewBox="0 0 48 57" fill="none">
+                                <path d="M47.9911 28.3798C48.0078 36.2177 45.136 42.7864 39.3756 48.0859C35.1204 52.0154 30.1354 54.674 24.6011 56.3357C24.4058 56.4054 24.1984 56.4344 23.9915 56.4208C23.9915 49.3768 23.9915 42.3327 23.9915 35.2886C24.1435 35.1216 24.2888 34.9429 24.4508 34.7876C28.6291 30.6059 32.8119 26.427 36.9992 22.2509C37.3115 21.9403 37.3916 21.7633 37.0209 21.4259C36.3128 20.783 35.6331 20.105 34.9918 19.3952C34.6578 19.0211 34.4724 19.113 34.1668 19.4236C32.5185 21.0936 30.8502 22.7636 29.1819 24.4186C27.5136 26.0736 25.8152 27.7586 24.1301 29.4286C23.9281 29.275 23.9965 29.0495 23.9965 28.8508C23.9965 19.3473 23.9965 9.84281 23.9965 0.337158C25.7634 0.859869 27.4701 1.55793 29.2003 2.18418C35.2573 4.38023 41.3094 6.59299 47.3715 8.77735C47.8308 8.94435 48.0011 9.12638 47.9995 9.64241C47.9783 15.8849 47.9755 22.1307 47.9911 28.3798Z" fill="#E00A0A"></path>
+                                <path d="M23.9937 35.2952C23.9937 42.3393 23.9937 49.3834 23.9937 56.4274C22.3454 56.1335 20.8073 55.4972 19.281 54.8443C14.1791 52.6616 9.65007 49.6673 6.05122 45.3854C2.84624 41.622 0.824423 36.9956 0.239603 32.0871C0.0708243 30.6836 -0.00893734 29.2707 0.000793651 27.857C0.00747366 21.7782 0.00747366 15.6994 0.000793651 9.62061C0.000793651 9.21647 0.0842937 8.99937 0.501794 8.84907C8.22277 6.05905 15.9387 3.2579 23.6497 0.44562C23.7649 0.4022 23.8868 0.37715 24.0054 0.34375C24.0054 9.84829 24.0054 19.3528 24.0054 28.8574C24.0054 29.0561 23.9369 29.2815 24.139 29.4352C22.9132 30.6777 21.6724 31.9068 20.465 33.171C20.111 33.5417 19.9189 33.5618 19.5465 33.181C17.6394 31.2321 15.6955 29.3216 13.7783 27.3811C13.4994 27.0988 13.3374 27.0638 13.0485 27.3711C12.3805 28.0841 11.6891 28.7789 10.9744 29.4452C10.6571 29.7425 10.6537 29.9078 10.9744 30.2201C13.8568 33.078 16.7259 35.9487 19.5816 38.8323C19.9523 39.208 20.1343 39.1279 20.4533 38.8039C21.614 37.6182 22.8097 36.4609 23.9937 35.2952Z" fill="#EE1818"></path>
+                            </svg>
+                            <span class="font-heading font-bold text-white text-sm">100% Trusted &amp; Secure</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h6 class="right-reveal text-primary font-heading font-bold text-sm tracking-wide uppercase mb-3">About Us</h6>
+                        <h2 class="title-animation font-heading font-extrabold text-ink text-3xl sm:text-4xl leading-tight mb-5">
+                            Crafting Tailored Strategies for <span class="text-primary">Sustainable Business</span>
+                        </h2>
+                        <p class="right-reveal text-body leading-relaxed mb-7">
+                            F&amp;F is an advisory financial firm focused on helping people on various services including, Mortgage, Protection, Estate Planning, General Insurance, Business Loan, Survey and Conveyancing. We pride ourselves on a customer-first approach. Your goals are our priority, and we work wholeheartedly to provide advice and solutions that support your financial future. Whether you prefer face-to-face meetings or convenient online consultations, we're here to guide you every step of the way.
+                        </p>
+                        <ul class="grid sm:grid-cols-2 gap-3 mb-7">
+                            <li class="right-reveal flex items-center gap-2.5 text-ink font-medium text-sm"><i class="fa-solid fa-circle-check text-primary"></i>Business Consulting</li>
+                            <li class="right-reveal flex items-center gap-2.5 text-ink font-medium text-sm"><i class="fa-solid fa-circle-check text-primary"></i>Integrate it on your business</li>
+                            <li class="right-reveal flex items-center gap-2.5 text-ink font-medium text-sm"><i class="fa-solid fa-circle-check text-primary"></i>Virtual support team</li>
+                            <li class="right-reveal flex items-center gap-2.5 text-ink font-medium text-sm"><i class="fa-solid fa-circle-check text-primary"></i>Track your daily activity</li>
+                            <li class="right-reveal flex items-center gap-2.5 text-ink font-medium text-sm"><i class="fa-solid fa-circle-check text-primary"></i>Pick up the tool</li>
+                            <li class="right-reveal flex items-center gap-2.5 text-ink font-medium text-sm"><i class="fa-solid fa-circle-check text-primary"></i>Let's monitor the engagement</li>
+                        </ul>
+                        <p class="right-reveal text-body leading-relaxed mb-8">With a commitment to excellence and a passion for driving transformative change, we provide remarkable solutions.</p>
+                        <div class="top-reveal flex flex-wrap items-center gap-8">
+                            <a href="contact.html" class="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-bold uppercase tracking-wide text-white shadow-lg shadow-primary/30 transition hover:bg-secondary hover:shadow-secondary/30">
+                                Contact Us
+                            </a>
+                            <a href="tel:+447552675976" class="flex items-center gap-3">
+                                <span class="grid place-items-center w-12 h-12 rounded-full bg-primary-light text-primary">
+                                    <span class="material-symbols-outlined">call</span>
+                                </span>
+                                <span class="leading-tight">
+                                    <span class="block text-xs text-body">Call Us</span>
+                                    <span class="block font-heading font-bold text-ink">+44 7552 675976</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How we work -->
+        <section class="py-16 sm:py-24">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-14 items-center">
+                    <div>
+                        <h6 class="right-reveal text-primary font-heading font-bold text-sm tracking-wide uppercase mb-3">How We Works?</h6>
+                        <h2 class="title-animation font-heading font-extrabold text-ink text-3xl sm:text-4xl leading-tight mb-5">
+                            Structured Approach for Effective <span class="text-primary">Consulting Engagements</span>
+                        </h2>
+                        <p class="right-reveal text-body leading-relaxed mb-9">
+                            Introducing our extraordinary consulting business, where we bring a unique set of features that set us apart from the rest. With a commitment to excellence and a passion for driving transformative change.
+                        </p>
+                        <div class="space-y-6">
+                            <div class="right-reveal flex gap-5">
+                                <div class="shrink-0 grid place-items-center w-14 h-14 rounded-2xl bg-primary-light text-primary text-2xl"><i class="flaticon-evaluation"></i></div>
+                                <div>
+                                    <h5 class="font-heading font-bold text-ink mb-1.5">Evaluation and Refinement</h5>
+                                    <p class="text-sm leading-relaxed">Introducing our extraordinary consulting business, where we bring a unique set of features.</p>
+                                </div>
+                            </div>
+                            <div class="right-reveal flex gap-5">
+                                <div class="shrink-0 grid place-items-center w-14 h-14 rounded-2xl bg-primary-light text-primary text-2xl"><i class="flaticon-team-work"></i></div>
+                                <div>
+                                    <h5 class="font-heading font-bold text-ink mb-1.5">Stakeholder Engagement</h5>
+                                    <p class="text-sm leading-relaxed">Introducing our extraordinary consulting business, where we bring a unique set of features.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/work/work2.jpg" alt="How we work" class="w-full rounded-3xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case studies -->
+        <section class="py-16 sm:py-24 bg-surface">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-8 items-center mb-14">
+                    <div>
+                        <h6 class="right-reveal text-primary font-heading font-bold text-sm tracking-wide uppercase mb-3">Case Studies</h6>
+                        <h2 class="animate-3d font-heading font-extrabold text-ink text-3xl sm:text-4xl leading-tight">
+                            A Case Study Empowering Future Leaders
+                        </h2>
+                    </div>
+                    <p class="right-reveal text-body leading-relaxed">
+                        Introducing our extraordinary consulting business, where we bring a unique set of features that set us apart from the rest. With a commitment to excellence and a passion for driving transformative change, we provide remarkable solutions.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+                    <a href="case-details.html" class="top-reveal group block rounded-2xl overflow-hidden bg-white shadow-soft">
+                        <div class="overflow-hidden">
+                            <img src="images/case/c-two1.jpg" alt="Investment Consulting" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold uppercase tracking-wide text-primary">Finance, Consulting</span>
+                            <h5 class="font-heading font-bold text-lg text-ink mt-2 group-hover:text-primary transition-colors">Investment Consulting</h5>
+                        </div>
+                    </a>
+                    <a href="case-details.html" class="top-reveal group block rounded-2xl overflow-hidden bg-white shadow-soft">
+                        <div class="overflow-hidden">
+                            <img src="images/case/c-two2.jpg" alt="Marketing Consulting" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold uppercase tracking-wide text-primary">Finance, Consulting</span>
+                            <h5 class="font-heading font-bold text-lg text-ink mt-2 group-hover:text-primary transition-colors">Marketing Consulting</h5>
+                        </div>
+                    </a>
+                    <a href="case-details.html" class="top-reveal group block rounded-2xl overflow-hidden bg-white shadow-soft md:col-span-2 xl:col-span-1">
+                        <div class="overflow-hidden">
+                            <img src="images/case/c-two3.jpg" alt="Co-Working Solutions" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold uppercase tracking-wide text-primary">Finance, Consulting</span>
+                            <h5 class="font-heading font-bold text-lg text-ink mt-2 group-hover:text-primary transition-colors">Co-Working Solutions</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why choose us -->
+        <section class="py-16 sm:py-24">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-14 items-center">
+                    <img src="images/choose/case-two.jpg" alt="Why choose F&amp;F Business" class="w-full rounded-3xl">
+                    <div>
+                        <h6 class="right-reveal text-primary font-heading font-bold text-sm tracking-wide uppercase mb-3">Why Choose Us?</h6>
+                        <h2 class="title-animation font-heading font-extrabold text-ink text-3xl sm:text-4xl leading-tight mb-5">
+                            We have a track record of delivering <span class="text-primary">tangible and measurable results.</span>
+                        </h2>
+                        <p class="right-reveal text-body leading-relaxed mb-9">
+                            Introducing our extraordinary consulting business, where we bring a unique set of features that set us apart from the rest. With a commitment to excellence and a passion for driving transformative change, we provide remarkable solutions.
+                        </p>
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div class="right-reveal flex items-center gap-4 rounded-2xl border border-black/5 p-5">
+                                <i class="flaticon-customer-support text-3xl text-primary"></i>
+                                <div>
+                                    <h6 class="text-sm font-semibold text-ink">Virtual support team</h6>
+                                    <div class="font-heading font-extrabold text-2xl text-ink">24/7</div>
+                                </div>
+                            </div>
+                            <div class="right-reveal flex items-center gap-4 rounded-2xl border border-black/5 p-5">
+                                <i class="flaticon-economic-growth text-3xl text-primary"></i>
+                                <div>
+                                    <h6 class="text-sm font-semibold text-ink">Business Growth</h6>
+                                    <div class="font-heading font-extrabold text-2xl text-ink">95%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="py-16 sm:py-24 bg-ink">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-8 items-center mb-14">
+                    <div>
+                        <h6 class="right-reveal text-primary font-heading font-bold text-sm tracking-wide uppercase mb-3">Our Testimonial</h6>
+                        <h2 class="title-animation font-heading font-extrabold text-white text-3xl sm:text-4xl leading-tight">
+                            We are Very Glad to Know <br><span class="text-primary">Our Client Reviews</span>
+                        </h2>
+                    </div>
+                    <p class="right-reveal text-white/60 leading-relaxed">
+                        These descriptions provide an overview of the roles and responsibilities associated with each team member in a consulting business. It's important to note that these descriptions can be further customized based on the specific needs and focus of your consulting agency.
+                    </p>
+                </div>
+                <div class="feedback-two-slide swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="rounded-3xl bg-white p-8 sm:p-10">
+                                <div class="flex items-center gap-4 mb-6">
+                                    <img src="images/user/1.jpg" alt="Walter J. Anthony" class="w-14 h-14 rounded-full object-cover">
+                                    <div>
+                                        <h6 class="font-heading font-bold text-ink">Walter J. Anthony</h6>
+                                        <span class="text-xs text-body">Founder, CEO</span>
+                                    </div>
+                                </div>
+                                <p class="text-body leading-relaxed mb-5">"This platform has completely transformed how we manage our business operations. The results speak for themselves!"</p>
+                                <ul class="flex gap-1 text-primary text-sm">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="rounded-3xl bg-white p-8 sm:p-10">
+                                <div class="flex items-center gap-4 mb-6">
+                                    <img src="images/user/2.jpg" alt="Emily R. Johnson" class="w-14 h-14 rounded-full object-cover">
+                                    <div>
+                                        <h6 class="font-heading font-bold text-ink">Emily R. Johnson</h6>
+                                        <span class="text-xs text-body">Marketing Director</span>
+                                    </div>
+                                </div>
+                                <p class="text-body leading-relaxed mb-5">"The customer support team is exceptional. They ensured a smooth onboarding experience for our entire team."</p>
+                                <ul class="flex gap-1 text-primary text-sm">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star-half"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="rounded-3xl bg-white p-8 sm:p-10">
+                                <div class="flex items-center gap-4 mb-6">
+                                    <img src="images/user/3.jpg" alt="James L. Carter" class="w-14 h-14 rounded-full object-cover">
+                                    <div>
+                                        <h6 class="font-heading font-bold text-ink">James L. Carter</h6>
+                                        <span class="text-xs text-body">Tech Consultant</span>
+                                    </div>
+                                </div>
+                                <p class="text-body leading-relaxed mb-5">"A fantastic solution for startups. It's intuitive, efficient, and has greatly improved our team's productivity."</p>
+                                <ul class="flex gap-1 text-primary text-sm">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center gap-6 mt-10">
+                    <button aria-label="Previous testimonial" class="fa-solid fa-angle-left slid-btn-prev grid place-items-center w-11 h-11 rounded-full border border-white/20 text-white hover:bg-primary hover:border-primary transition-colors"></button>
+                    <div class="swiper-number font-heading font-bold text-white"></div>
+                    <button aria-label="Next testimonial" class="fa-solid fa-angle-right slid-btn-next grid place-items-center w-11 h-11 rounded-full border border-white/20 text-white hover:bg-primary hover:border-primary transition-colors"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="py-16 sm:py-24">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-14 items-center">
+                    <img src="images/faq/2.jpg" alt="Frequently asked questions" class="w-full rounded-3xl">
+                    <div>
+                        <h6 class="right-reveal text-primary font-heading font-bold text-sm tracking-wide uppercase mb-3">FAQs Questions</h6>
+                        <h2 class="title-animation font-heading font-extrabold text-ink text-3xl sm:text-4xl leading-tight mb-8">
+                            Great Solutions For <br><span class="text-primary">Your Business</span>
+                        </h2>
+                        <div class="space-y-4" data-accordion-group>
+                            <div class="top-reveal accordion-open rounded-2xl border border-black/5 overflow-hidden" data-accordion-item>
+                                <button type="button" data-accordion-trigger aria-expanded="true" class="flex w-full items-center justify-between gap-4 px-6 py-5 text-left font-heading font-bold text-ink hover:text-primary transition-colors">
+                                    What Is Required Of A Consultant?
+                                    <i class="fa-solid fa-plus text-primary text-sm shrink-0 transition-transform"></i>
+                                </button>
+                                <div data-accordion-panel class="px-6 pb-5 text-sm leading-relaxed">
+                                    <p>A good consultant brings clear, independent advice, up-to-date market knowledge and a genuine focus on the client's goals — not just product recommendations.</p>
+                                </div>
+                            </div>
+                            <div class="top-reveal rounded-2xl border border-black/5 overflow-hidden" data-accordion-item>
+                                <button type="button" data-accordion-trigger aria-expanded="false" class="flex w-full items-center justify-between gap-4 px-6 py-5 text-left font-heading font-bold text-ink hover:text-primary transition-colors">
+                                    Open A Business Bank Account?
+                                    <i class="fa-solid fa-plus text-primary text-sm shrink-0 transition-transform"></i>
+                                </button>
+                                <div data-accordion-panel class="hidden px-6 pb-5 text-sm leading-relaxed">
+                                    <p>Most UK banks ask for proof of ID, proof of address and basic company details. Our team can point you to business-banking partners suited to your situation.</p>
+                                </div>
+                            </div>
+                            <div class="top-reveal rounded-2xl border border-black/5 overflow-hidden" data-accordion-item>
+                                <button type="button" data-accordion-trigger aria-expanded="false" class="flex w-full items-center justify-between gap-4 px-6 py-5 text-left font-heading font-bold text-ink hover:text-primary transition-colors">
+                                    Is A Consulting Business Profitable?
+                                    <i class="fa-solid fa-plus text-primary text-sm shrink-0 transition-transform"></i>
+                                </button>
+                                <div data-accordion-panel class="hidden px-6 pb-5 text-sm leading-relaxed">
+                                    <p>Profitability depends on the niche, client relationships and consistency of referrals — a focused, customer-first approach tends to compound over time.</p>
+                                </div>
+                            </div>
+                            <div class="top-reveal rounded-2xl border border-black/5 overflow-hidden" data-accordion-item>
+                                <button type="button" data-accordion-trigger aria-expanded="false" class="flex w-full items-center justify-between gap-4 px-6 py-5 text-left font-heading font-bold text-ink hover:text-primary transition-colors">
+                                    How Do I Book A Consultation?
+                                    <i class="fa-solid fa-plus text-primary text-sm shrink-0 transition-transform"></i>
+                                </button>
+                                <div data-accordion-panel class="hidden px-6 pb-5 text-sm leading-relaxed">
+                                    <p>Head to our <a href="contact.html" class="text-primary font-semibold underline">Contact page</a> or call us directly — we'll arrange a time that works, in person or online.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <a href="faq.html" class="inline-flex items-center gap-2 text-sm font-bold text-primary hover:gap-3 transition-all">
+                                View all FAQs <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-ink text-white/70">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 -translate-y-10">
+            <div class="rounded-3xl bg-primary px-6 sm:px-12 py-10 shadow-2xl shadow-primary/30">
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
+                    <h2 class="font-heading font-extrabold text-white text-2xl sm:text-3xl text-center lg:text-left">Subscribe for Any Update Information</h2>
+                    <form action="#" data-demo-form class="w-full lg:w-auto flex flex-col sm:flex-row items-stretch gap-3">
+                        <input type="email" name="email" required placeholder="Enter your email address" class="w-full sm:w-72 rounded-full px-6 py-3.5 text-sm text-ink placeholder:text-body focus:outline-none focus:ring-2 focus:ring-white">
+                        <button type="submit" class="rounded-full bg-ink px-7 py-3.5 text-sm font-bold uppercase tracking-wide text-white hover:bg-black transition-colors">Submit</button>
+                    </form>
+                </div>
+                <p data-form-note class="hidden mt-4 text-sm text-white/90 text-center lg:text-left">Thanks — you're subscribed!</p>
+            </div>
+        </div>
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-16 -mt-4">
+            <div class="grid lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-4">
+                    <a href="index.html"><img src="images/logo/logo.png" alt="F&amp;F Business logo" class="h-11 w-auto mb-5"></a>
+                    <p class="text-sm leading-relaxed mb-6">We pride ourselves on a customer-first approach. Your goals are our priority, and we work wholeheartedly to provide advice and solutions that support your financial future.</p>
+                    <ul class="flex items-center gap-3">
+                        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" class="grid place-items-center w-9 h-9 rounded-full bg-white/10 hover:bg-primary transition-colors"><i class="fab fa-facebook-f text-xs"></i></a></li>
+                        <li><a href="https://www.x.com/?lang=en" target="_blank" rel="noopener" aria-label="X (Twitter)" class="grid place-items-center w-9 h-9 rounded-full bg-white/10 hover:bg-primary transition-colors"><i class="fa-brands fa-x-twitter text-xs"></i></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="grid place-items-center w-9 h-9 rounded-full bg-white/10 hover:bg-primary transition-colors"><i class="fab fa-instagram text-xs"></i></a></li>
+                        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="grid place-items-center w-9 h-9 rounded-full bg-white/10 hover:bg-primary transition-colors"><i class="fab fa-linkedin-in text-xs"></i></a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-3">
+                    <h4 class="font-heading font-bold text-white mb-5">Explore</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="about.html" class="hover:text-primary transition-colors">About Company</a></li>
+                        <li><a href="mortgages.html" class="hover:text-primary transition-colors">Mortgages</a></li>
+                        <li><a href="estate-planning.html" class="hover:text-primary transition-colors">Estate Planning</a></li>
+                        <li><a href="loan-to-value.html" class="hover:text-primary transition-colors">Loan to Value</a></li>
+                        <li><a href="contact.html" class="hover:text-primary transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-5 grid sm:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-heading font-bold text-white mb-5">Official Info</h4>
+                        <ul class="space-y-4 text-sm">
+                            <li class="flex items-start gap-3">
+                                <span class="material-symbols-outlined !text-lg text-primary">location_on</span>
+                                <span>20 Hesselyn Drive, Rainham, Essex, RM13 7EJ</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="material-symbols-outlined !text-lg text-primary">phone_in_talk</span>
+                                <a href="tel:+447552675976" class="hover:text-primary transition-colors">+44 7552 675976</a>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="material-symbols-outlined !text-lg text-primary">mail</span>
+                                <a href="mailto:info@fandfbusniess.co.uk" class="hover:text-primary transition-colors">info@fandfbusniess.co.uk</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 class="font-heading font-bold text-white mb-5">Open Hours</h5>
+                        <p class="text-sm">Mon – Sat: 8am – 5pm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-white/10">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
+                <p class="text-center text-xs text-white/50">© 2026. All Rights Reserved by F and F Business</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/SplitText.min.js"></script>
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/odometer.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

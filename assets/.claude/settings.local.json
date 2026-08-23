@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//run/media/xihad/Programming/**)",
+      "Bash(grep -nE '^\\\\.navbar[[:space:]{,.:]|^\\\\.nav-link[[:space:]{,.:]|^\\\\.dropdown-menu[[:space:]{,.:]|^\\\\.dropdown-item[[:space:]{,.:]' main.css)",
+      "Bash(grep -o \"el.length===0[^}]\\\\{0,80\\\\}\" /run/media/xihad/Programming/assets/js/swiper-bundle.min.js)",
+      "Bash(python3 -c \"import os; print\\(os.path.realpath\\('.'\\)\\)\")",
+      "Bash(python3 /tmp/claude-1000/-run-media-xihad-Programming-assets/ce1e3265-826f-44f9-b4eb-d3eb3e432bf6/scratchpad/gen_pages.py)",
+      "Bash(python3 run_build.py)",
+      "Bash(python3 pages.py)",
+      "Bash(python3 pages2.py)",
+      "Bash(cd /run/media/xihad/Programming/assets *)",
+      "Bash(python3 pages3.py)",
+      "Bash(python3 pages4.py)",
+      "Bash(python3)",
+      "Bash(command -v chromium-cli)",
+      "Bash(find / -iname \"chromium-cli*\")",
+      "Bash(command -v npx node)",
+      "Bash(npx --yes playwright --version)",
+      "Bash(python3 -c \"import playwright\")",
+      "Bash(python3 -c \"import selenium\")",
+      "Bash(pip install *)"
+    ],
+    "additionalDirectories": [
+      "/run/media/xihad/Programming/assets"
+    ]
+  }
+}
