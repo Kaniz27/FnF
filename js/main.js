@@ -14,6 +14,18 @@
   gsap.registerPlugin(ScrollTrigger);
 
   /* ========================================
+     Sticky Navbar Scroll Shadow Js
+   ======================================== */
+  const stickyNavbar = document.querySelector('.navbar.sticky');
+  if (stickyNavbar) {
+    const toggleNavbarShadow = () => {
+      stickyNavbar.classList.toggle('navbar-scrolled', window.scrollY > 10);
+    };
+    window.addEventListener('scroll', toggleNavbarShadow, { passive: true });
+    toggleNavbarShadow();
+  }
+
+  /* ========================================
      Navbar Links Active  Js
    ======================================== */
   if ($('.navbar-nav').length) {
@@ -950,11 +962,33 @@
     });
   });
 
+  /* ========================================
+     Form Submit Toast Popup Js
+   ======================================== */
+  function showSiteToast(message) {
+    let toast = document.getElementById('site-toast');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.id = 'site-toast';
+      toast.className = 'site-toast';
+      toast.innerHTML = '<i class="fa-solid fa-circle-check"></i><span data-toast-text></span>';
+      document.body.appendChild(toast);
+    }
+    toast.querySelector('[data-toast-text]').textContent = message;
+    toast.classList.add('site-toast-show');
+    clearTimeout(toast._hideTimer);
+    toast._hideTimer = setTimeout(() => {
+      toast.classList.remove('site-toast-show');
+    }, 4000);
+  }
+
   document.querySelectorAll('[data-demo-form]').forEach((form) => {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       const note = form.querySelector('[data-form-note]');
       if (note) note.classList.remove('hidden');
+      const message = form.getAttribute('data-success-message') || "Thanks — we've received your submission!";
+      showSiteToast(message);
       form.reset();
     });
   });
