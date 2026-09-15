@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/odometer.css">
     <link rel="stylesheet" href="css/custom-animation.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/subpages.css">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -44,7 +45,7 @@
     </script>
 </head>
 
-<body class="font-body text-body antialiased bg-white">
+<body class="subpage-page subpage-services font-body text-body antialiased bg-white">
 
     <div class="cursor"></div>
     <div class="cursor-trail"></div>
@@ -113,9 +114,9 @@
 
     <main>
         <!-- Breadcrumb -->
-        <section class="relative bg-ink py-20 sm:py-28">
+        <section class="subpage-hero relative bg-ink py-20 sm:py-28">
             <div class="absolute inset-0">
-                <img src="images/breadcrumb/1.jpg" alt="" class="w-full h-full object-cover opacity-25">
+                <img src="images/services/services-details.jpg" alt="" class="w-full h-full object-cover opacity-25">
                 <div class="absolute inset-0 bg-ink/80"></div>
             </div>
             <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
@@ -125,37 +126,6 @@
                     <i class="fa-solid fa-angle-right text-xs"></i>
                     <span class="text-primary">Services</span>
                 </nav>
-            </div>
-        </section>
-
-        <!-- What I Offer -->
-        <section class="py-16 sm:py-24">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div class="grid lg:grid-cols-2 gap-8 items-center mb-14">
-                    <div>
-                        <h6 class="right-reveal text-primary font-heading font-bold text-sm tracking-wide uppercase mb-3">What I Offer</h6>
-                        <h2 class="title-animation font-heading font-extrabold text-ink text-3xl sm:text-4xl leading-tight">
-                            Three Services, One <span class="text-primary">Digital Partner</span>
-                        </h2>
-                    </div>
-                    <p class="right-reveal text-body leading-relaxed">
-                        Choose the exact support your business needs: stronger marketing, a high-performing website, or a smooth payment experience. Every service is planned around your goals and built to work beautifully together.
-                    </p>
-                </div>
-                <div class="grid md:grid-cols-3 gap-6">
-                    <a href="digital-marketing.html" class="top-reveal group overflow-hidden rounded-2xl border border-black/5 bg-white shadow-soft hover:-translate-y-1.5 transition-transform">
-                        <img src="images/services/servicesThree1.jpg" alt="Digital marketing strategy" class="h-48 w-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="p-7"><div class="grid place-items-center w-14 h-14 rounded-2xl bg-primary-light text-primary text-2xl mb-5"><i class="flaticon-growth"></i></div><h5 class="font-heading font-bold text-lg text-ink mb-2">Digital Marketing</h5><p class="text-sm leading-relaxed">Grow visibility with focused content, social campaigns and strategies that attract the right audience.</p><span class="inline-flex items-center gap-2 mt-4 text-xs font-bold uppercase tracking-wide text-primary">See Details <i class="fa-solid fa-arrow-down text-[10px]"></i></span></div>
-                    </a>
-                    <a href="web-development.html" class="top-reveal group overflow-hidden rounded-2xl border border-black/5 bg-white shadow-soft hover:-translate-y-1.5 transition-transform">
-                        <img src="images/services/servicesThree2.jpg" alt="Web development workspace" class="h-48 w-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="p-7"><div class="grid place-items-center w-14 h-14 rounded-2xl bg-primary-light text-primary text-2xl mb-5"><i class="flaticon-it-service"></i></div><h5 class="font-heading font-bold text-lg text-ink mb-2">Web Development</h5><p class="text-sm leading-relaxed">Build trust with a fast, responsive website designed around your brand and customer journey.</p><span class="inline-flex items-center gap-2 mt-4 text-xs font-bold uppercase tracking-wide text-primary">See Details <i class="fa-solid fa-arrow-down text-[10px]"></i></span></div>
-                    </a>
-                    <a href="payment-solutions.html" class="top-reveal group overflow-hidden rounded-2xl border border-black/5 bg-white shadow-soft hover:-translate-y-1.5 transition-transform">
-                        <img src="images/services/servicesThree3.jpg" alt="Payment solution interface" class="h-48 w-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="p-7"><div class="grid place-items-center w-14 h-14 rounded-2xl bg-primary-light text-primary text-2xl mb-5"><i class="flaticon-credit-card"></i></div><h5 class="font-heading font-bold text-lg text-ink mb-2">Payment Solutions</h5><p class="text-sm leading-relaxed">Make checkout easier with secure payment flows that help customers complete purchases confidently.</p><span class="inline-flex items-center gap-2 mt-4 text-xs font-bold uppercase tracking-wide text-primary">See Details <i class="fa-solid fa-arrow-down text-[10px]"></i></span></div>
-                    </a>
-                </div>
             </div>
         </section>
 
@@ -198,6 +168,33 @@
                     <div>
                         <img src="images/work/work2.jpg" alt="How I work" class="w-full rounded-3xl">
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Three service overview -->
+        <section id="work" class="py-16 sm:py-24">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-8 items-center mb-14">
+                    <div>
+                        <h6 class="right-reveal text-primary font-heading font-bold text-sm tracking-wide uppercase mb-3">Our Services</h6>
+                        <h2 class="animate-3d font-heading font-extrabold text-ink text-3xl sm:text-4xl leading-tight">Three Services. <span class="text-primary">One Digital Partner.</span></h2>
+                    </div>
+                    <p class="right-reveal text-body leading-relaxed">From secure payments to high-performing websites and campaigns that get attention, choose the focused service your business needs next.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <a href="digital-marketing.html" class="top-reveal group overflow-hidden rounded-2xl border border-black/5 bg-white shadow-soft hover:-translate-y-1.5 transition-transform">
+                        <img src="images/logo/market1.jfif" alt="Digital marketing strategy" class="h-52 w-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="p-7"><span class="text-xs font-bold uppercase tracking-wide text-primary">01</span><h5 class="font-heading font-bold text-lg text-ink mt-2 mb-2">Digital Marketing</h5><p class="text-sm leading-relaxed mb-4">Purposeful content and campaigns that grow reach, engagement and qualified leads.</p><span class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-primary">Explore Service <i class="fa-solid fa-arrow-right text-[10px]"></i></span></div>
+                    </a>
+                    <a href="web-development.html" class="top-reveal group overflow-hidden rounded-2xl border border-black/5 bg-white shadow-soft hover:-translate-y-1.5 transition-transform">
+                        <img src="images/logo/web1.jfif" alt="Web development workspace" class="h-52 w-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="p-7"><span class="text-xs font-bold uppercase tracking-wide text-primary">02</span><h5 class="font-heading font-bold text-lg text-ink mt-2 mb-2">Web Development</h5><p class="text-sm leading-relaxed mb-4">Fast, responsive websites built around your brand, goals and customers.</p><span class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-primary">Explore Service <i class="fa-solid fa-arrow-right text-[10px]"></i></span></div>
+                    </a>
+                    <a href="payment-solutions.html" class="top-reveal group overflow-hidden rounded-2xl border border-black/5 bg-white shadow-soft hover:-translate-y-1.5 transition-transform">
+                        <img src="images/logo/pay1.jfif" alt="Payment solution interface" class="h-52 w-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="p-7"><span class="text-xs font-bold uppercase tracking-wide text-primary">03</span><h5 class="font-heading font-bold text-lg text-ink mt-2 mb-2">Payment Solutions</h5><p class="text-sm leading-relaxed mb-4">Reliable payment flows that help customers complete purchases confidently.</p><span class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-primary">Explore Service <i class="fa-solid fa-arrow-right text-[10px]"></i></span></div>
+                    </a>
                 </div>
             </div>
         </section>

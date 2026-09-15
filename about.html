@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/odometer.css">
     <link rel="stylesheet" href="css/custom-animation.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/subpages.css">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -44,7 +45,7 @@
     </script>
 </head>
 
-<body class="font-body text-body antialiased bg-white">
+<body class="subpage-page subpage-about font-body text-body antialiased bg-white">
 
     <div class="cursor"></div>
     <div class="cursor-trail"></div>
@@ -121,9 +122,9 @@
 
     <main>
         <!-- Breadcrumb -->
-        <section class="relative bg-ink py-20 sm:py-28">
+        <section class="subpage-hero relative bg-ink py-20 sm:py-28">
             <div class="absolute inset-0">
-                <img src="images/breadcrumb/1.jpg" alt="" class="w-full h-full object-cover opacity-25">
+                <img src="images/logo/web2.jfif" alt="Web development project" class="w-full h-full object-cover opacity-25">
                 <div class="absolute inset-0 bg-ink/80"></div>
             </div>
             <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
@@ -133,6 +134,61 @@
                     <i class="fa-solid fa-angle-right text-xs"></i>
                     <span class="text-primary">About Me</span>
                 </nav>
+            </div>
+        </section>
+
+        <!-- Animated work showcase -->
+        <section class="about-showcase" aria-labelledby="about-showcase-title">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="about-showcase-heading">
+                    <div>
+                        <p class="subpage-kicker">Selected work</p>
+                        <h2 id="about-showcase-title">Ideas Designed To <em>Move.</em></h2>
+                    </div>
+                    <p>Explore a moving snapshot of digital marketing, payment and web projects built to help ambitious businesses grow.</p>
+                </div>
+            </div>
+            <div class="about-showcase-window" aria-label="Selected project images">
+                <div class="about-showcase-track">
+                    <figure><img src="images/logo/market1.jfif" alt="Digital marketing project one"></figure>
+                    <figure><img src="images/logo/pay1.jfif" alt="Payment solution project one"></figure>
+                    <figure><img src="images/logo/web1.jfif" alt="Web development project one"></figure>
+                    <figure><img src="images/logo/market2jfif.jfif" alt="Digital marketing project two"></figure>
+                    <figure><img src="images/logo/pay2.jfif" alt="Payment solution project two"></figure>
+                    <figure><img src="images/logo/web2.jfif" alt="Web development project two"></figure>
+                    <figure><img src="images/logo/market3.jfif" alt="Digital marketing project three"></figure>
+                    <figure><img src="images/logo/pay3jfif.jfif" alt="Payment solution project three"></figure>
+                    <figure><img src="images/logo/web3.jfif" alt="Web development project three"></figure>
+                    <figure><img src="images/logo/web4.jfif" alt="Web development project four"></figure>
+                    <figure aria-hidden="true"><img src="images/logo/market1.jfif" alt=""></figure>
+                    <figure aria-hidden="true"><img src="images/logo/pay1.jfif" alt=""></figure>
+                    <figure aria-hidden="true"><img src="images/logo/web1.jfif" alt=""></figure>
+                    <figure aria-hidden="true"><img src="images/logo/market2jfif.jfif" alt=""></figure>
+                    <figure aria-hidden="true"><img src="images/logo/pay2.jfif" alt=""></figure>
+                    <figure aria-hidden="true"><img src="images/logo/web2.jfif" alt=""></figure>
+                    <figure aria-hidden="true"><img src="images/logo/market3.jfif" alt=""></figure>
+                    <figure aria-hidden="true"><img src="images/logo/pay3jfif.jfif" alt=""></figure>
+                    <figure aria-hidden="true"><img src="images/logo/web3.jfif" alt=""></figure>
+                    <figure aria-hidden="true"><img src="images/logo/web4.jfif" alt=""></figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- What makes us different -->
+        <section class="about-difference" aria-labelledby="about-difference-title">
+            <div class="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[.8fr_1.2fr] lg:items-start lg:px-8">
+                <div class="about-difference-heading">
+                    <p class="subpage-kicker">The DigiTech difference</p>
+                    <h2 id="about-difference-title">What Makes<br><em>DigiTech Different?</em></h2>
+                </div>
+                <div class="about-difference-grid">
+                    <article><span class="about-difference-icon">◎</span><h3>Customer Focused</h3><p>Every decision starts with your audience, your goals and the experience you want customers to remember.</p></article>
+                    <article><span class="about-difference-icon">⌘</span><h3>Clear Process</h3><p>A straightforward path from first conversation to launch, with no confusing handoffs.</p></article>
+                    <article><span class="about-difference-icon">♧</span><h3>Experienced Team</h3><p>Practical digital thinking, careful craft and a collaborative approach on every project.</p></article>
+                    <article><span class="about-difference-icon">↗</span><h3>Fast &amp; Flexible</h3><p>We move with purpose, adapt when priorities change and keep momentum visible.</p></article>
+                    <article><span class="about-difference-icon">✧</span><h3>Smart Strategy</h3><p>Creative ideas are connected to real actions, useful journeys and measurable outcomes.</p></article>
+                    <article><span class="about-difference-icon">▥</span><h3>Data Backs Decisions</h3><p>We use evidence, performance signals and honest reporting to guide the next improvement.</p></article>
+                </div>
             </div>
         </section>
 
